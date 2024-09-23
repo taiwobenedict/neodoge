@@ -152,7 +152,7 @@ nav {
 /* About */
 #about {
     background: url('./images/aboutbg.svg') center center/cover no-repeat;
-    background-position: bottom;
+    background-position-y: -200px;
     padding: 5rem 0 2.5rem 0;
 }
 

@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+:root {
+    --color-1: #D9EDDB;
+    --color-2: #191D16;
+}
+
+body {
+    font-family: "Bricolage Grotesque", sans-serif;
+    background-color: var(--color-2);
+    line-height: 1.2;
+}
+
+img {
+    width: 100%;
+}
+
+.z-index-1 {
+    z-index: 1;
+}
+
+.z-index-2 {
+    z-index: 2;
+}
+
+.color-1 {
+    color: var(--color-1);
+}
+.color-2 {
+    color: var(--color-2);
+}
+
+.font-size-72 {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.font-size-52 {
+    font-size: 3.25rem;
+    font-weight: 700;
+}
+.font-size-40 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.font-size-32 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.font-size-24 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.font-size-18 {
+    font-size: 1.125rem;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+#hero {
+    height: 100vh;
+    background: url("/images/hero.png") center center/cover no-repeat;
+    position: relative;
+    width: 100%;
+}
+
+
+nav {
+    max-width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.nav-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-items {
+    position: relative;
+    z-index: 1;
+}
+
+.nav-link {
+    color: var(--color-2);
+    margin-bottom: 2.3rem;
+    font-weight: 700;
+}
+
+
+.hero-content {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 100%;
+    max-width: 53.0625rem;
+    color: var(--color-1);
+}
+
+
+.hero-heading {
+    font-size: 6rem;
+    font-weight: 700;
+    -webkit-text-stroke: 3px #CBDEBF;
+}
+
+.hero-btns {
+    gap: 3rem;
+}
+
+.hero-btn {
+    position: relative;
+    width: 100%;
+    max-width: 9.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-2);
+    min-height: 3.7rem;
+    margin-top: 1rem;
+
+}
+
+.hero-btn-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.hero-btn span {
+    position: relative;
+    z-index: 1;
+    font-weight: 700;
+}
+
+/* About */
+#about {
+    background: url('./images/aboutbg.svg') center center/cover no-repeat;
+    background-position: bottom;
+    padding: 5rem 0 2.5rem 0;
+}
+
+.custom-container {
+    max-width: 81rem;
+    margin-inline: auto;
+}
+
+.social-handles {
+    gap: 1.5rem;
+}
+
+.handle {
+    box-shadow: 5px 5px 0px 0px #042008;
+    background-color: var(--color-1);
+    border: 2px solid #191D16;
+    background: #D9EDDB;
+    width: 100%;
+    max-width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon-img {
+    max-width: 24px;
+}
+
+
+
+.about-content {
+    padding: 5rem 0 2.5rem 0;
+}
+
+.about-heading,
+.about-text-content {
+    position: relative;
+    padding: 3rem;
+}
+
+.about-heading {
+    height: 100%;
+}
+
+.about-text-content {
+    height: 100%;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.about-heading-img,
+.about-text-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-subtitle {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+
+.about-btn {
+    color: var(--color-1);
+}
+
+
+/* Video */
+#video {
+    padding-block: 4rem;
+}
+
+.video {
+    width: 100%;
+    max-width: 53rem;
+    border: 5px solid #334334;
+    box-shadow: 8px 8px 0px 0px #10531B;
+    height: 33rem;
+    border-radius: 24px;
+    margin-inline: auto;
+}
+
+/* Tokenomics */
+#tokenomics {
+    padding-top: 6rem;
+}
+
+.address-text {
+    font-size: calc(2.45vw + 2px);
+}
+
+#live-chart {
+    padding-top: 4rem;
+}
+
+.live-chart {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.footer-nav {
+    padding: 2rem;
+    border-radius: 40px;
+    background-color: var(--color-2);
+}
+
+#footer {
+    padding: 6rem 0;
+
+    position: relative;
+}
+
+
+#footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./images/aboutbg.svg') center center/cover no-repeat;
+    transform: scaleY(-1);
+    z-index: -1; /* Make sure the background stays behind the content */
+  }
+
+.footer-nav a {
+    padding: 10px 15px;
+}
+
+.logo {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10px;
+    background-color: var(--color-1);
+}
+
+
+
+
+@media (max-width: 1500px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+
+
+@media (max-width: 575.98px) { 
+    
+    .font-size-72 {
+        font-size: 4.5rem;
+        font-weight: 700;
+    }
+    
+    .font-size-52 {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+    .font-size-40 {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+    
+    .font-size-32 {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    
+    .font-size-24 {
+        font-size: 1.125rem;
+        font-weight: 700;
+    }
+    
+    .font-size-18 {
+        font-size: 1.125rem;
+    }
+
+    .address-text {
+        font-size: calc(2.45vw + 2px);
+    }
+
+
+    .social-handles {
+        gap: .5rem;
+    }
+    
+    .handle {
+        max-width: 3.5rem;
+        height: 3.5rem;
+    
+    
+    }
+    
+    .hero-heading {
+        font-size: 5rem;
+    }
+
+ }
+
+ .custom-flex {
+    display: flex;
+    align-items: center;
+ }
+
+
+@media (max-width: 767.98px) { 
+
+    .custom-flex {
+        display: block;
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+        align-items: center;
+     }
+
+     .navbar-brand {
+        justify-content:flex-start !important;
+        margin-bottom: 2.5rem;
+     }
+
+     .custom-flex .nav-item {
+        margin: 0 0 2.5rem 0 !important;
+     }
+
+    #hero {
+        height: 70vh;
+    }
+
+    .font-size-72 {
+        font-size: 3rem;
+        font-weight: 700;
+    }
+
+    .about-img {
+        margin-bottom: 1rem;
+        max-width: 400px;
+        margin-inline: auto;
+    }
+
+    
+    nav .nav-link {
+        margin-bottom: 1rem;
+        font-size: 1.125rem;
+    }
+
+    nav {
+        top: 25%;
+    }
+ }
+
+
+@media (max-width: 991.98px) { 
+
+
+
+ }
+
+
+@media (max-width: 1199.98px) { 
+
+ }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 :root {
     --color-1: #D9EDDB;
@@ -26,6 +27,7 @@ img {
 .color-1 {
     color: var(--color-1);
 }
+
 .color-2 {
     color: var(--color-2);
 }
@@ -39,6 +41,7 @@ img {
     font-size: 3.25rem;
     font-weight: 700;
 }
+
 .font-size-40 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -251,7 +254,7 @@ nav {
 }
 
 .address-text {
-    font-size: calc(2.45vw + 2px);
+    font-size: 2.2vw;
 }
 
 #live-chart {
@@ -285,8 +288,9 @@ nav {
     bottom: 0;
     background: url('./images/aboutbg.svg') center center/cover no-repeat;
     transform: scaleY(-1);
-    z-index: -1; /* Make sure the background stays behind the content */
-  }
+    z-index: -1;
+    /* Make sure the background stays behind the content */
+}
 
 .footer-nav a {
     padding: 10px 15px;
@@ -310,81 +314,82 @@ nav {
 
 
 
-@media (max-width: 575.98px) { 
-    
+@media (max-width: 575.98px) {
+
     .font-size-72 {
         font-size: 4.5rem;
         font-weight: 700;
     }
-    
+
     .font-size-52 {
         font-size: 2.25rem;
         font-weight: 700;
     }
+
     .font-size-40 {
         font-size: 2.5rem;
         font-weight: 700;
     }
-    
+
     .font-size-32 {
         font-size: 2rem;
         font-weight: 700;
     }
-    
+
     .font-size-24 {
         font-size: 1.125rem;
         font-weight: 700;
     }
-    
+
     .font-size-18 {
         font-size: 1.125rem;
     }
 
     .address-text {
-        font-size: calc(2.45vw + 2px);
+        font-size: calc(2.45vw + 1px);
     }
 
 
     .social-handles {
         gap: .5rem;
     }
-    
+
     .handle {
         max-width: 3.5rem;
         height: 3.5rem;
-    
-    
+
+
     }
-    
+
     .hero-heading {
         font-size: 5rem;
     }
 
- }
+}
 
- .custom-flex {
+.custom-flex {
     display: flex;
     align-items: center;
- }
+}
 
 
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
 
     .custom-flex {
         display: block;
         margin-left: 0px !important;
         padding-left: 0px !important;
         align-items: center;
-     }
+    }
 
-     .navbar-brand {
-        justify-content:flex-start !important;
+    .navbar-brand {
+        justify-content: flex-start !important;
         margin-bottom: 2.5rem;
-     }
+    }
 
-     .custom-flex .nav-item {
+    .custom-flex .nav-item {
         margin: 0 0 2.5rem 0 !important;
-     }
+    }
 
     #hero {
         height: 70vh;
@@ -401,7 +406,7 @@ nav {
         margin-inline: auto;
     }
 
-    
+
     nav .nav-link {
         margin-bottom: 1rem;
         font-size: 1.125rem;
@@ -410,16 +415,92 @@ nav {
     nav {
         top: 25%;
     }
- }
+
+    .address-text {
+        font-size: 2.8vw !important;
+    }
+}
 
 
-@media (max-width: 991.98px) { 
+@media (max-width: 991.98px) {
+
+    .address-text {
+        font-size: calc(2.45vw + 3px);
+    }
 
 
 
- }
+}
 
 
-@media (max-width: 1199.98px) { 
+@media (max-width: 1199.98px) {}
 
- }
+
+@font-face {
+    font-family: "Computer";
+    src: url("./font/retro_computer_personal_use.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.welcome {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:  rgb(128, 128, 128);
+    padding: 1rem;
+    line-height: 1.5;
+
+}
+
+.text {
+    margin-bottom: 3rem;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: rgb(128, 128, 128);
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+    height: 5px;
+}
+
+
+.button, .continue {
+    margin-top: 4rem;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(128, 128, 128);
+    border-color: rgb(128, 128, 128);
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show-text {
+    display: block;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+         transform: translateY(3px)
+    }
+    ;
+}

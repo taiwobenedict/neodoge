@@ -42,6 +42,7 @@
     <script>
         window.onload = function () {
             var texts = document.querySelectorAll(".hide");
+            var button = document.querySelector(".button")
             texts.forEach((text, index) => {
 
                 
@@ -49,7 +50,7 @@
                 setTimeout(() => {
                     text.classList.remove("hide");
                     text.classList.add("show-text");
-                }, (index + 1) * 1500); // 1000ms delay for each text
+                }, (index + 1) * 700); // 1000ms delay for each text
             });
 
             window.addEventListener("keypress", function(e) {
@@ -57,6 +58,10 @@
                 window.location.href = "main.html"; 
                }
             })
+
+            button.onclick = function () {
+             window.location.href = "main.html"; 
+            }
         }
     </script>
 </body>

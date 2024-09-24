@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
     --color-1: #D9EDDB;
@@ -7,7 +8,8 @@
 }
 
 body {
-    font-family: "Bricolage Grotesque", sans-serif;
+ 
+    font-family: "JetBrains Mono", monospace;
     background-color: var(--color-2);
     line-height: 1.2;
     margin: 0;
@@ -85,6 +87,7 @@ nav {
     right: 10px;
     top: 50%;
     transform: translate(0%, -50%);
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .nav-img {

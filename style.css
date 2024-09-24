@@ -39,21 +39,25 @@ img {
 .font-size-72 {
     font-size: 4.5rem;
     font-weight: 700;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .font-size-52 {
     font-size: 3.25rem;
     font-weight: 700;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .font-size-40 {
     font-size: 2.5rem;
     font-weight: 700;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .font-size-32 {
     font-size: 2rem;
     font-weight: 700;
+    font-family: "Bricolage Grotesque", sans-serif;
 }
 
 .font-size-24 {
@@ -362,8 +366,15 @@ nav {
     padding: 10px 20px;
     background-color: transparent;
     color: rgb(128, 128, 128);
-    border-color: rgb(128, 128, 128);
+    border: solid 1px rgb(128, 128, 128);
     outline: none;
+    box-shadow: -2px -2px 0px rgb(128, 128, 128);
+    cursor: pointer;
+
+}
+
+.button:active {
+    box-shadow: inset -2px -2px 0px rgb(128, 128, 128);
 }
 
 .hide {

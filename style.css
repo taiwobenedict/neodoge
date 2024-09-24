@@ -10,6 +10,8 @@ body {
     font-family: "Bricolage Grotesque", sans-serif;
     background-color: var(--color-2);
     line-height: 1.2;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -314,6 +316,70 @@ nav {
 
 
 
+
+.custom-flex {
+    display: flex;
+    align-items: center;
+}
+
+
+.welcome {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color:  rgb(128, 128, 128);
+    padding: 1rem;
+    line-height: 1.5;
+
+}
+
+.text {
+    margin-bottom: 2rem;
+}
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    background-color: rgb(128, 128, 128);
+    margin-left: 2px;
+    animation: blink 1s step-end infinite;
+    height: 5px;
+}
+
+
+.button, .continue {
+    margin-top: 4rem;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(128, 128, 128);
+    border-color: rgb(128, 128, 128);
+    outline: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show-text {
+    display: block;
+}
+
+
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+
 @media (max-width: 575.98px) {
 
     .font-size-72 {
@@ -364,13 +430,13 @@ nav {
     .hero-heading {
         font-size: 5rem;
     }
+    
+    .text {
+        font-size: 9px !important;
+    }
 
 }
 
-.custom-flex {
-    display: flex;
-    align-items: center;
-}
 
 
 @media (max-width: 767.98px) {
@@ -434,74 +500,3 @@ nav {
 
 
 @media (max-width: 1199.98px) {}
-
-
-@font-face {
-    font-family: "Computer";
-    src: url("./font/retro_computer_personal_use.ttf");
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-.welcome {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    background-color: #000;
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-size: 12px;
-    font-style: normal;
-    color:  rgb(128, 128, 128);
-    padding: 1rem;
-    line-height: 1.5;
-
-}
-
-.text {
-    margin-bottom: 2rem;
-}
-
-.cursor {
-    display: inline-block;
-    width: 10px;
-    background-color: rgb(128, 128, 128);
-    margin-left: 2px;
-    animation: blink 1s step-end infinite;
-    height: 5px;
-}
-
-
-.button, .continue {
-    margin-top: 4rem;
-}
-
-.button {
-    padding: 10px 20px;
-    background-color: transparent;
-    color: rgb(128, 128, 128);
-    border-color: rgb(128, 128, 128);
-    outline: none;
-}
-
-.hide {
-    display: none;
-}
-
-.show-text {
-    display: block;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-
-    100% {
-         transform: translateY(3px)
-    }
-    ;
-}

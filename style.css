@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @font-face {
     font-family: "Gota";
     src: url("/font/Gota.otf");
@@ -8,6 +9,10 @@
 :root {
     --color-1: #D9EDDB;
     --color-2: #191D16;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {

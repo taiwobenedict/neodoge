@@ -287,6 +287,11 @@ nav {
     padding: 2rem;
     border-radius: 40px;
     background-color: var(--color-2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
 }
 
 #footer {
@@ -310,7 +315,7 @@ nav {
 }
 
 .footer-nav a {
-    padding: 10px 15px;
+    padding: 5px 10px;
 }
 
 .logo {
@@ -457,27 +462,29 @@ nav {
         font-size: 9px !important;
     }
 
+
+
 }
 
 
 
 @media (max-width: 767.98px) {
 
-    .custom-flex {
+    /* .custom-flex {
         display: block;
         margin-left: 0px !important;
         padding-left: 0px !important;
         align-items: center;
-    }
+    } */
 
     .navbar-brand {
         justify-content: flex-start !important;
         margin-bottom: 2.5rem;
     }
 
-    .custom-flex .nav-item {
+    /* .custom-flex .nav-item {
         margin: 0 0 2.5rem 0 !important;
-    }
+    } */
 
 
 
@@ -504,6 +511,25 @@ nav {
 
     .address-text {
         font-size: 2.8vw !important;
+    }
+
+    .container {
+        padding-top: 3rem;
+
+    }
+
+    .nav-items {
+        display: flex;
+        background-color: var(--color-1);
+        width: fit-content;
+        margin-inline: auto;
+        padding: 5px 10px;
+        border-radius: 10px;
+      
+    }
+
+    .nav-items .nav-link {
+        margin-bottom: 0;
     }
 }
 

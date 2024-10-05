@@ -9,6 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
         integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>NEODOGE</title>
 </head>
@@ -18,7 +19,7 @@
     <div id="hero">
 
         <div class="container-fluid">
-            <nav>
+            <nav class="d-none d-md-block">
                 <div class="nav-img">
                     <img src="./images/navbox.png" class="h-100" alt="">
                 </div>
@@ -30,6 +31,15 @@
 
                 </div>
             </nav>
+            <div class="container d-md-none">
+                <div class="nav-items">
+                    <a href="#hero" class="nav-link font-size-24">Home</a>
+                    <a href="#about" class="nav-link font-size-24">About</a>
+                    <a href="#values" class="nav-link font-size-24">Values</a>
+                    <a href="#contact" class="nav-link font-size-24">Contact</a>
+
+                </div>
+            </div>
 
             <div class="hero-content text-center">
                 <div class="hero-heading font-size-96">NEODOGE</div>
@@ -315,26 +325,24 @@
 
         <div id="footer">
             <div class="custom-container">
-                <div class="footer-nav custom-flex justify-content-between flex-wrap">
-                    <div class="nav-item font-size-24 color-1">contact@neodoge.xyz</div>
-                    <ul class="ml-auto custom-flex">
-                        <li class="nav-item">
-                            <a class="font-size-24 color-1" href="#hero">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-size-24 color-1" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-size-24 color-1" href="#values">Values</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-size-24 color-1" href="#contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="font-size-24 color-1" href="#">Disclaimer</a>
-                        </li>
+                <div class="footer-nav">
+                    <a href="mailto:contact@neodoge.xyz" class="nav-item font-size-24 color-1 d-flex align-items-center"><i class="fas fa-envelope mr-2"></i> contact@neodoge.xyz</a>
+                    <div class="custom-flex mb-0">
+                        <a class="font-size-24 color-1" href="#hero">Home</a>
 
-                    </ul>
+                        <a class="font-size-24 color-1" href="#about">About</a>
+
+                        <a class="font-size-24 color-1" href="#values">Ideology</a>
+
+                        <a class="font-size-24 color-1" href="#">Disclaimer</a>
+
+                        
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <a class="font-size-24 color-1" href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="font-size-24 color-1" href="#"><i class="fa-brands fa-telegram"></i></a>
+
+                    </div>
                 </div>
             </div>
         </div>
